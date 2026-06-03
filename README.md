@@ -1,16 +1,36 @@
-WEB SCRAPPER
-A fast and lightweight web scraper built in C. It establishes a network connection to any target website, parses the raw HTML data, and instantly extracts all embedded hyperlinks and image sources.
+<h1>WEB SCRAPPER</h1>
 
-🛠️ GETTING STARTED
-1. Install System Dependencies
-Before compiling, you need to install libcurl and Google's gumbo parser headers. Run this command in your terminal:
+<p>A web scraper built in C that connects to a website and extracts all links and images.</p>
 
-sudo apt-get install libcurl4-openssl-dev libgumbo-dev
-2. Build the Executable
-Compile the source code using the automation rules defined in the Makefile:
+<br />
 
-make
-3. Execute the Scraper
-Run the compiled binary file and pass the URL you want to inspect as a command-line argument:
+<h2>1. INSTALL DEPENDENCIES</h2>
 
-./scraper https://example.com
+<p>Open your terminal and run this command to install the required libraries:</p>
+
+<pre>sudo apt-get install libcurl4-openssl-dev libgumbo-dev</pre>
+
+<br />
+
+<h2>2. COMPILE THE PROJECT</h2>
+
+<p>Run this command in your terminal to build the executable binary:</p>
+
+<pre>make</pre>
+
+<br />
+
+<h2>3. RUN THE SCRAPER</h2>
+
+<p>Execute the program by passing the website URL you want to scrape:</p>
+
+<pre>./scraper https://example.com</pre>
+
+<br />
+
+<h2>REPOSITORY FILES</h2>
+<ul>
+    <li><b>main.c</b> - Source code for fetching and parsing HTML.</li>
+    <li><b>Makefile</b> - Handles compilation flags and library linking.</li>
+    <li><b>README.md</b> - This documentation file.</li>
+</ul>

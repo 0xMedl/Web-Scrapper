@@ -5,7 +5,7 @@ TARGET = scraper
 
 all: $(TARGET)
 
-$(TARGET): main.o
+$(TARGET): main.c
 	$(CC) $(CFLAGS) main.c -o $(TARGET) $(LIBS)
 
 clean:
